@@ -2,11 +2,14 @@
 body {
     background-color: rgb(243, 243, 243);
     font-family: 'Source Sans Pro', sans-serif;
+
+    text-align: center;
     
 
 }
 p {
-    font-size: 2em;
+    font-size: 3em;
+    
 }
 
 h1 {
