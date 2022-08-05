@@ -1,14 +1,96 @@
 <!doctype html>
+
 <html>
 
 <head>
-    <title>Master Seafood's Website</title>
+    <title>George Wang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Master Seafood</h1>
-    <p>Hello World!</p>
+    <nav class="nav-bar flex-row justify-right">
+        <ul>
+            <li class="hover-left"><a href="#">Intro</a></li>
+            <li class="hover-left"><a href="#projects">Projects</a></li>
+            <li class="hover-left"><a href="#hobbies">Hobbies</a></li>
+        </ul>
+        <div class="line" style="margin-left:10px"></div>
+    </nav>
+
+    <aside class="links flex-row">
+        <div class="line" style="margin-right:10px"></div>
+        <ul>
+            <li><a href="https://github.com/MasterSeafood"><img class="logo" src="images/github-logo2.png" />GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/george-wang-062ba5247/"><img class="logo" src="images/linkedin-logo2.png"/>Linkedin</a></li>
+            <li><a href="mailto:gz2wang@uwaterloo.ca" title="gz2wang@uwaterloo.ca"><img class="logo" src="images/email-icon.png"/>Email</a></li>
+        </ul>
+    </aside>
+
+
+    <div class="flex-row justify-center">
+        <div class="flex-column">
+            <header class="intro">
+                <p style="">Hey, I'm</p>
+                <h1 class="gradient name">George<br>Wang</h1>
+            </header>
+            <section class="description">
+                <p>I'm a software engineering student at the University of Waterloo.</p>
+                <p>I'm curious about all things related to tech, science, and math.</p>
+            </section>
+
+            <section id="projects" class="projects">
+                <div class="gradient overline"></div>
+                <h2 class="gradient">Projects</h2>
+
+                <article>
+                    <h3>Nonogram Puzzle</h3>
+                    <p>A nonogram puzzle player, solver, and creater</p>
+                    <p><a href="https://github.com/MasterSeafood/Nonograms" >View on GitHub</a></p>
+                </article>
+                
+                <article>
+                    <h3>DOS Card Game</h3>
+                    <p>A replication of the card game DOS in the terminal</p>
+                    <p><a href="https://github.com/MasterSeafood/DOSCardGame" >View on GitHub</a></p>
+                </article>
+                
+                <article>
+                    <h3>Git Branch View</h3>
+                    <p>A bash script to view the relationships between branches</p>
+                    <p><a href="https://github.com/MasterSeafood/ShellScripts" >View on GitHub</a></p>
+                </article>
+
+            </section>
+
+            <section id="hobbies" class="hobbies">
+                <div class="gradient overline"></div>
+                <h2 class="gradient">Hobbies</h2>
+                <div class="flex-row spaced" style="margin-top: 1rem;">
+                    <ul class="list">
+                        <li>Badminton</li>
+                        <li>Cross Country</li>
+                        <li>Ultimate</li>
+                        <li>Track and Field</li>
+                        <li>Table Tennis</li>
+                    </ul>
+                    <ul class="list">
+                        <li>Hiking</li>
+                        <li>Biking</li>
+                        <li>Reading</li>
+                        <li>Meditation</li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- <aside class="links">
+
+    </aside> -->
+
 </body>
 
 </html>
