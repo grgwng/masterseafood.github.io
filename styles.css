@@ -51,7 +51,9 @@ body {
     color: transparent;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(105deg, #0F40ED, #ff299b);
+    background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     width:min-content;
     /* border: 1px solid red; */
 }
