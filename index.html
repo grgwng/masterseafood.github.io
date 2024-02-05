@@ -1,105 +1,174 @@
 <!doctype html>
-
-<html>
-
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/G.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.scss">
+    <script src="https://kit.fontawesome.com/641001d58a.js" crossorigin="anonymous"></script>
     <title>George Wang</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="images/icon3.png">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR5LRP5MGF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </head>
+  <body>
+    <div id="navbar-container">
+      <div id="navbar">
+        <div id="navbar-page-links">
+          <a href="#top"><img class="navbar-logo" src="G.svg"></a>
+          <a href="#experience-section" class="navbar-link">Experience</a>
+          <a href="#projects-section" class="navbar-link">Projects</a>
+          <a href="#contact-section" class="navbar-link">Contact</a>
+          <a href="#more-about-me-section" class="navbar-link">More about me</a>
+        </div>
+        <div id="navbar-ext-links">
+          <a href="https://github.com/grgwng"><i class="fa-brands fa-github navbar-ext-link"></i></a>
+          <a href="https://www.linkedin.com/in/george-wang-062ba5247"><i class="fa-brands fa-linkedin navbar-ext-link"></i></a>
+          <a href="mailto:gz2wang@uwaterloo.ca"><i class="fa-solid fa-envelope navbar-ext-link"></i></a>
+        </div>
+      </div>
+  
+    </div>
+    <a id="navsmall-button" ><i class="fa-solid fa-bars"></i></a>
 
-  gtag('config', 'G-CR5LRP5MGF');
-</script>
-<body>
-    <nav class="nav-bar flex-row justify-right">
-        <ul>
-            <li class="hover-left"><a href="#">Intro</a></li>
-            <li class="hover-left"><a href="#projects">Projects</a></li>
-            <li class="hover-left"><a href="#hobbies">Hobbies</a></li>
-        </ul>
-        <div class="line" style="margin-left:10px"></div>
-    </nav>
-
-    <aside class="links flex-row">
-        <div class="line" style="margin-right:10px"></div>
-        <ul>
-            <li><a href="https://github.com/MasterSeafood"><img class="logo" src="images/github-logo2.png" />GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/george-wang-062ba5247/"><img class="logo" src="images/linkedin-logo2.png"/>Linkedin</a></li>
-            <li><a href="mailto:gz2wang@uwaterloo.ca" title="gz2wang@uwaterloo.ca"><img class="logo" src="images/email-icon.png"/>Email</a></li>
-        </ul>
-    </aside>
-
-
-    <div class="flex-row justify-center">
-        <div class="flex-column">
-            <header class="intro">
-                <p style="">Hey, I'm</p>
-                <h1 class="gradient name">George<br>Wang</h1>
-            </header>
-            <section class="description">
-                <p>I'm a software engineering student at the University of Waterloo.</p>
-                <p>I'm curious about all things related to tech, science, and math.</p>
-            </section>
-
-            <section id="projects" class="projects">
-                <div class="gradient overline"></div>
-                <h2 class="gradient">Projects</h2>
-
-                <article>
-                    <h3>Nonogram Puzzle</h3>
-                    <p>A nonogram puzzle player, solver, and creater</p>
-                    <p><a href="https://github.com/MasterSeafood/Nonograms" >View on GitHub</a></p>
-                </article>
-                
-                <article>
-                    <h3>DOS Card Game</h3>
-                    <p>A replication of the card game DOS in the terminal</p>
-                    <p><a href="https://github.com/MasterSeafood/DOSCardGame" >View on GitHub</a></p>
-                </article>
-                
-                <article>
-                    <h3>Git Branch View</h3>
-                    <p>A bash script to view the relationships between branches</p>
-                    <p><a href="https://github.com/MasterSeafood/ShellScripts" >View on GitHub</a></p>
-                </article>
-
-            </section>
-
-            <section id="hobbies" class="hobbies">
-                <div class="gradient overline"></div>
-                <h2 class="gradient">Hobbies</h2>
-                <div class="flex-row spaced" style="margin-top: 1rem;">
-                    <ul class="list">
-                        <li>Badminton</li>
-                        <li>Cross Country</li>
-                        <li>Ultimate</li>
-                        <li>Track and Field</li>
-                        <li>Table Tennis</li>
-                    </ul>
-                    <ul class="list">
-                        <li>Hiking</li>
-                        <li>Biking</li>
-                        <li>Reading</li>
-                        <li>Meditation</li>
-                    </ul>
-
-                </div>
-            </section>
+    <div id="navsmall-bar">
+      <div class="navsmall-top">
+        <div class="navsmall-links">
+          <a href="#top"><img class="navbar-logo navsmall-link" src="G.svg"></a>
+          <a href="#experience-section" class="navbar-link navsmall-link">Experience</a>
+          <a href="#projects-section" class="navbar-link navsmall-link">Projects</a>
+          <a href="#contact-section" class="navbar-link navsmall-link">Contact</a>
+          <a href="#more-about-me-section" class="navbar-link navsmall-link">More about me</a>
 
         </div>
+        <a><i class="fa-solid fa-x " id="navsmall-close"></i></a>
+      </div>
+      <div class="navsmall-icons">
+        <a href="https://github.com/grgwng"><i class="fa-brands fa-github navbar-ext-link navsmall-icon"></i></a>
+        <a href="https://www.linkedin.com/in/george-wang-062ba5247"><i class="fa-brands fa-linkedin navbar-ext-link navsmall-icon"></i></a>
+        <a href="mailto:gz2wang@uwaterloo.ca"><i class="fa-solid fa-envelope navbar-ext-link navsmall-icon"></i></a>
+      </div>
 
     </div>
 
-    <!-- <aside class="links">
+    <div id="top"></div>
+    <div id="home-container">
+      <p id="intro-start">Hey, I'm</p>
+      <h1 class="gradient">George Wang</h1>
+      <h3 class="intro-end">I'm a software engineering student at the University of Waterloo.</h3>
+      <h3 class="intro-end">I'm curious about all things tech, science and math.</h3>
+    </div>
+    <div class="section-container" id="experience-section">
+      <h2 class="gradient">Experience</h2>
+      <div class="divider gradient"></div>
+      <div class="grid-container">
+        <div class="experience-grid-item">
+          <h3 class="experience-job-title">Software Developer Intern</h3>
+          <h4 class="experience-company">@ TMX Group</h4>
+          <p class="experience-date-range">May 2023 - Aug. 2023</p>
+          <div class="experience-company-logo-container">
+            <img class="experience-company-logo" src="tmx-logo.png">
+          </div>
+          <ul class="experience-content">
+            <li>Managed data-retrieval scripts using <span class="bold">Python</span> and <span class="bold">SQL</span></li>
+            <li>Optimized <span class="bold">Tableau</span> dashboards</li>
+            <li>Contributed in other various ad-hoc tasks</li>
+          </ul>
+        </div>
+        <div class="experience-grid-item">
+          <h3 class="experience-job-title">Programming Lead</h3>
+          <h4 class="experience-company">@ FRC7902 Markham Firebirds</h4>
+          <p class="experience-date-range">Sep. 2018 - Jun. 2022</p>
+          <div class="experience-company-logo-container">
+            <img class="experience-company-logo" src="frc7902logo.png">
+          </div>
+          <ul class="experience-content">
+            <li>Led a team of high school students to program a competitive robot with <span class="bold">Java</span></li>
+            <li>Wrote technical and training documentation to onboard new members</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    </aside> -->
+    <div class="section-container" id="projects-section">
+      <h2 class="gradient">Projects</h2>
+      <div class="divider gradient"></div>
+      <div class="grid-container">
+        <div class="experience-grid-item">
+          <h3 class="experience-job-title">Dynamic Spotify Playlist</h3>
+          <div class="experience-image-container">
+            <img class="experience-image" src="spotify-shuffle.png">
+          </div>
+          <p class="experience-description">A Node.js server to refresh Spotify playlists</p>
+          <div class="project-buttons-container">
+            <!-- <a href="https://www.google.com/" class="project-button"><div>Go to Project</div></a> -->
+            <div></div>
+            <a href="https://github.com/grgwng/DynamicSpotifyPlaylists" class="github-link"><div>View on GitHub <i class="fa-brands fa-github"></i></div></a>
+          </div>
+        </div>
 
-</body>
+        <div class="experience-grid-item">
+          <h3 class="experience-job-title">Solar Tracking Car</h3>
+          <div class="experience-image-container">
+            <img class="experience-image" src="solar_car.png">
+          </div>
+          <p class="experience-description">A miniature autonomous car that tracks light</p>
+          <div class="project-buttons-container">
+            <div></div>
+            <a href="https://github.com/grgwng/SolarTrackingCar" class="github-link"><div>View on GitHub <i class="fa-brands fa-github"></i></div></a>
+          </div>
+        </div>
+        
+        <div class="experience-grid-item">
+          <h3 class="experience-job-title">Nonograms</h3>
+          <div class="experience-image-container">
+            <img class="experience-image" src="nonograms.png">
+          </div>
+          <p class="experience-description">A Java Swing app to play/create nonograms</p>
+          <div class="project-buttons-container">
+            <div></div>
+            <a href="https://github.com/grgwng/Nonograms" class="github-link"><div>View on GitHub <i class="fa-brands fa-github"></i></div></a>
+          </div>
+        </div>
 
+      </div>
+    </div>
+
+    <div class="section-container" id="contact-section">
+      <h2 class="gradient">Contact Me</h2>
+      <div class="divider gradient"></div>
+      <div class="contact-grid-container">
+        <a href="https://github.com/grgwng" >
+          <div class="experience-grid-item contact-grid-item">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/george-wang-062ba5247/" >
+          <div class="experience-grid-item contact-grid-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        
+        <a href="mailto:gz2wang@uwaterloo.ca" >
+          <div class="experience-grid-item contact-grid-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-container" id="more-about-me-section">
+      <h2 class="gradient">More About Me</h2>
+      <div class="divider gradient"></div>
+      <div class="about-me-container">
+        <p class="about-me">I love to spend my time hiking, biking, and being outdoors in general. </p>
+        <p class="about-me">My hobbies include juggling, badminton, table tennis, and ultimate!</p>
+
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript" src="../dist/index.js"></script>
 </html>
