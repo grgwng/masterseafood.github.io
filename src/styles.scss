@@ -55,6 +55,8 @@ div.gradient {
 }
 
 .experience-grid-item {
+    display: flex;
+    flex-direction: column;
 
     border-radius: 24px;
     border-width: 5px;
@@ -132,6 +134,7 @@ div.gradient {
     align-items: center;
     justify-content:space-between;
     height: 30px;
+    margin-top: auto;
 }
 
 
